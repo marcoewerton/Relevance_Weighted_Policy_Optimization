@@ -270,7 +270,7 @@ save('workspace_after_relevance_learning.mat');
 
 toc
 
-%% compute mean ans std of returns1
+%% compute mean and std of returns1
 mu_returns1 = mean(returns1);
 std_returns1 = std(returns1);
 figure(12);
@@ -280,7 +280,7 @@ shadedErrorBar(1:n_iterations_rel_opt, mu_returns1, 2*std_returns1, '-b', 2);
 xlabel('Iteration');
 ylabel('returns1');
 
-%% compute mean ans std of returns2
+%% compute mean and std of returns2
 mu_returns2 = mean(returns2);
 std_returns2 = std(returns2);
 figure(13);
@@ -290,7 +290,7 @@ shadedErrorBar(1:n_iterations_rel_opt, mu_returns2, 2*std_returns2, '-b', 2);
 xlabel('Iteration');
 ylabel('returns2');
 
-%% compute mean ans std of returns3
+%% compute mean and std of returns3
 mu_returns3 = mean(returns3);
 std_returns3 = std(returns3);
 figure(14);
